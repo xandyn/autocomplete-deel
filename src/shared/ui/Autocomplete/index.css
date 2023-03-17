@@ -1,0 +1,76 @@
+.autocomplete {
+  display: flex;
+  position: relative;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.clear {
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.chevron {
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  line-height: 24px;
+  height: 26px;
+  width: 100%;
+}
+
+.label {
+  height: 26px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: calc(5 * 40px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #404040;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  height: 40px;
+  font-size: 16px;
+  user-select: none;
+  white-space: pre-wrap;
+  cursor: pointer;
+}
+
+.menu-item.info {
+  cursor: default;
+}
+
+.menu-item:hover:not(.info) {
+  background: #505050;
+}
